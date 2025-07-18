@@ -2,125 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hotel Safari | Home</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Internal CSS */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-    }
-
-    header {
-      background-color: #2b2d42;
-      padding: 20px;
-      color: white;
-      text-align: center;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #8d99ae;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      padding: 15px 25px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      background-color: #ef233c;
-    }
-
-    nav a:active {
-      background-color: #d90429;
-    }
-
-    nav a:visited {
-      color: #edf2f4;
-    }
-
-    .main-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-    }
-
-    .box {
-      border: 2px solid #2b2d42;
-      padding: 20px;
-      margin: 10px;
-      width: 90%;
-      max-width: 600px;
-      background-color: white;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #2b2d42;
-      color: white;
-      margin-top: 30px;
-    }
-
-    @media screen and (max-width: 600px) {
-      nav {
-        flex-direction: column;
-      }
-
-      .box {
-        width: 95%;
-      }
-    }
-  </style>
+  <title>Muhiim Travel Agency - Home</title>
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Welcome to Hotel Safari</h1>
-    <p>Your comfort is our priority</p>
-  </header>
+<!-- Navigation -->
+<nav>
+  <img src="logo.png" alt="Muhiim Travel Agency Logo" class="logo" />
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="help.html">Help</a></li>
+  </ul>
+</nav>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="about.html">About</a>
-    <a href="help.html">Help</a>
-    <a href="images.html">Images</a>
-  </nav>
+<!-- Hero Section -->
+<header class="hero">
+  <div class="hero-content">
+    <h1>Explore the World with Muhiim Travel Agency</h1>
+    <p>Discover unforgettable destinations, study abroad, and enjoy quality travel services.</p>
+    <a href="services.html" class="btn">See Our Services</a>
+  </div>
+</header>
 
-  <main class="main-content">
-    <div class="box" style="box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
-      <h2>Why Choose Us?</h2>
-      <p>
-        Hotel Safari offers the best hotel experience with luxurious rooms, 24/7 customer service,
-        and delicious meals from our world-class chefs. We are located in the heart of the city
-        with access to all major attractions.
-      </p>
-    </div>
+<!-- Info Section -->
+<main class="box">
+  <h2>Welcome to Muhiim Travel Agency</h2>
+  <p>At Muhiim Travel Agency, we connect you with the world. Whether you're traveling for education, tourism, or business — we make it easy and professional.</p>
 
-    <div class="box" style="background-color: #edf2f4;">
-      <h2>What We Offer</h2>
-      <p>
-        From deluxe rooms to standard suits, we provide different types of accommodations 
-        for your needs. We also offer event hosting, tours, and transportation services.
-      </p>
-    </div>
-  </main>
+  <h3>Our Mission</h3>
+  <p>To provide reliable, affordable, and fast travel services for both local and international customers.</p>
 
-  <footer>
-    <p>© 2025 Hotel Safari | Designed by salmo
-        
-    </p>
-  </footer>
+  <h3>Meet the Team</h3>
+  <ul>
+    <li>Ahmed cabdikariin mohamed - CEO</li>
+    <li>yahye abdulahi ahmed - Operations Manager</li>
+    <li>Abdi Farah - Visa Expert</li>
+    <li>mahad Mohamed - Student Advisor</li>
+  </ul>
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Muhiim Travel Agency. All rights reserved.</p>
+</footer>
 
 </body>
 </html>

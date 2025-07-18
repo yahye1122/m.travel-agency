@@ -2,177 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hotel Safari | Contact Us</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-    }
-
-    header {
-      background-color: #2b2d42;
-      padding: 20px;
-      text-align: center;
-      color: white;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #8d99ae;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      padding: 15px 25px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      background-color: #ef233c;
-    }
-
-    nav a:active {
-      background-color: #d90429;
-    }
-
-    nav a:visited {
-      color: #edf2f4;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    .form-section, .table-section {
-      background-color: white;
-      border: 2px solid #2b2d42;
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 600px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    label {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
-    input, textarea, select {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-
-    table, th, td {
-      border: 1px solid #2b2d42;
-    }
-
-    th, td {
-      padding: 10px;
-      text-align: center;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #2b2d42;
-      color: white;
-      margin-top: 30px;
-    }
-
-    @media screen and (max-width: 600px) {
-      nav {
-        flex-direction: column;
-      }
-
-      .form-section, .table-section {
-        width: 95%;
-      }
-    }
-  </style>
+  <title>Muhiim Travel Agency - Contact Us</title>
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Contact Us</h1>
-    <p>We’re here to help – reach out anytime!</p>
-  </header>
+<nav>
+  <img src="logo.png" alt="Muhiim Travel Agency Logo" class="logo" />
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html" class="active">Contact Us</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="help.html">Help</a></li>
+  </ul>
+</nav>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="about.html">About</a>
-    <a href="help.html">Help</a>
-    <a href="images.html">Images</a>
-  </nav>
+<main class="box">
+  <h2>Contact Us</h2>
 
-  <main>
-    <div class="form-section">
-      <h2>Contact Form</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+  <form>
+    <fieldset>
+      <legend>Send Us a Message</legend>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+      <!-- Full Name -->
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
 
-        <label for="gender">Gender:</label>
-        <select id="gender" name="gender">
-          <option value="">--Choose--</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">Other</option>
-        </select>
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4"></textarea>
+      <!-- Gender -->
+      <label>Gender:</label>
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label>
 
-        <input type="submit" value="Send" style="margin-top: 15px; background-color: #2b2d42; color: white; border: none; cursor: pointer;">
-      </form>
-    </div>
+      <!-- Customer Type -->
+      <label>Customer Type:</label>
+      <input type="radio" name="customer" id="local" value="local" />
+      <label for="local">Local</label>
+      <input type="radio" name="customer" id="national" value="national" />
+      <label for="national">National</label>
 
-    <div class="table-section">
-      <h2>Hotel Room Prices</h2>
-      <table>
-        <tr>
-          <th>Room Type</th>
-          <th>Price/Night</th>
-        </tr>
-        <tr>
-          <td>Standard Room</td>
-          <td>$50</td>
-        </tr>
-        <tr>
-          <td>Deluxe Room</td>
-          <td>$85</td>
-        </tr>
-        <tr>
-          <td>Executive Suite</td>
-          <td>$120</td>
-        </tr>
-      </table>
-    </div>
-  </main>
+      <!-- Somali Regions -->
+      <label for="region">Choose a Somali Region:</label>
+      <select name="region" id="region">
+        <option value="">--Select Region--</option>
+        <option value="banadir">Banadir</option>
+        <option value="puntland">Puntland</option>
+        <option value="somaliland">Somaliland</option>
+        <option value="jubbaland">Jubbaland</option>
+        <option value="hirshabelle">Hirshabelle</option>
+        <option value="southwest">South West</option>
+        <option value="galmudug">Galmudug</option>
+      </select>
 
-  <footer>
-    <p>© 2025 Hotel Safari | Designed by salma</p>
-  </footer>
+      <!-- International Countries -->
+      <label for="country">Choose a Country:</label>
+      <select name="country" id="country">
+        <option value="">--Select Country--</option>
+        <option value="kenya">Kenya</option>
+        <option value="turkey">Turkey</option>
+        <option value="uk">United Kingdom</option>
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        <option value="egypt">Egypt</option>
+        <option value="saudi">Saudi Arabia</option>
+      </select>
+
+      <!-- Message -->
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <!-- Submit and Clear -->
+      <div class="form-buttons">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Clear" />
+      </div>
+    </fieldset>
+  </form>
+
+  <!-- Contact Numbers -->
+  <h3>Contact Information</h3>
+  <table>
+    <caption>📞 Call Us Anytime</caption>
+    <tr>
+      <th>Phone</th>
+      <th>Availability</th>
+    </tr>
+    <tr>
+      <td>0612871238</td>
+      <td>24/7</td>
+    </tr>
+    <tr>
+      <td>0682874152</td>
+      <td>24/7</td>
+    </tr>
+  </table>
+  <table>
+    <caption> Our Information</caption>
+    <th>local</th>
+    <th>national</th>
+    <tr>
+      <td>gorowe____120$</td>
+      <td>dubi____5500$</td>
+    </tr>
+    <tr>
+      <td>gurceel___120$</td>
+      <td>france____7767$</td>
+    </tr>
+    <tr>
+      <td>kismaayo____135$</td>
+      <td>spian___6565$</td>
+    </tr>
+  </table>
+</main>
+
+<footer>
+  <p>&copy; 2025 Muhiim Travel Agency. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
