@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Safari | Images</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #2b2d42;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #8d99ae;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #ef233c;
+    }
+
+    nav a:active {
+      background-color: #d90429;
+    }
+
+    nav a:visited {
+      color: #edf2f4;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .image-box {
+      background-color: white;
+      border: 2px solid #2b2d42;
+      padding: 15px;
+      max-width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .image-box p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #2b2d42;
+      color: white;
+      margin-top: 30px;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hotel Safari Gallery</h1>
+    <p>Explore our beautiful spaces</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About</a>
+    <a href="help.html">Help</a>
+    <a href="images.html">Images</a>
+  </nav>
+
+  <main class="gallery">
+    <div class="image-box">
+      <img src="hotel1.jpg"Luxury Room">
+      <p>Enjoy our spacious and elegant luxury rooms designed for ultimate comfort.</p>
+    </div>
+
+    <div class="image-box">
+      <img src="hotel2.jpg" alt="Swimming Pool">
+      <p>Relax in our clean, large swimming pool with beautiful scenery.</p>
+    </div>
+
+    <div class="image-box">
+      <img src="hotel3.jpg" alt="Dining Area">
+      <p>Experience five-star meals in our stylish restaurant and dining space.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Hotel Safari | Designed by salma</p>
+  </footer>
+
+</body>
+</html>
